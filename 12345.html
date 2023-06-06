@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffcccc, #ffffff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+   
+    .login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+   
+    .login-container h2 {
+      text-align: center;
+    }
+   
+    .login-form {
+      margin-top: 20px;
+    }
+   
+    .form-group {
+      margin-bottom: 10px;
+      position: relative;
+    }
+   
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+   
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      padding-left: 40px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+   
+    .form-group .fa-user {
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      color: #aaa;
+    }
+   
+    .form-group .fa-lock {
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      color: #aaa;
+    }
+   
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form" action="process-login.php" method="POST">
+      <div class="form-group">
+        <label for="username"><i class="fas fa-user"></i> Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password"><i class="fas fa-lock"></i> Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input class="submit-btn" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
